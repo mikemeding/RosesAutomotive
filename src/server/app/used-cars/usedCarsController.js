@@ -2,7 +2,7 @@
  * Used Car page controller
  */
 angular.module('app')
-    .controller('UsedCarsCtrl', function UsedCarsCtrl($scope) {
+    .controller('UsedCarsCtrl', function UsedCarsCtrl($scope, $http) {
         $scope.title = "Home Page";
 
         $scope.cars = [
@@ -29,4 +29,14 @@ angular.module('app')
                 description: 'I am the original owner of this 2002 WRX hatchback. It has very low miles and has received all scheduled maintenance (originally at Ed Reilly, the dealer, and more recently at Weed Family Auto in Concord). The engine runs fantastically - its a lot of fun to drive. The car comes with two sets of original factory alloy rims. The snow tires - Blizzaks - are currently mounted, and were just purchased in February 2015. The other set of rims has all seasons that will need to be replaced. What are the issues? As keeping with a 13 year old NH car, there are some rust spots. Most prominently above the left rear wheel well. There is a small tear in the driver seat upholstery. The car was in its first accident in Spring 2014 - I was rear ended at low speed and the bumper and right rear panels were replaced. No structural damage.The exhaust will need some work. It began running rough in early February this year, and Weed Auto estimates about $1,800 in work will be required to pass inspection (Aug 2015). Thats chiefly why Im discounting the price from the KBB "Fair" amount of $6,100.'
             }
         ]
+
+        var refresh = function() {
+            $http.get('/used-cars').success(function(response) {
+                console.log("Got data: ");
+                console.log(response);
+            });
+        };
+
+        refresh();
+
     });
