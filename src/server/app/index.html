@@ -24,105 +24,63 @@
     <script src="home/homeController.js"></script>
     <script src="used-cars/usedCarsController.js"></script>
 
-
 </head>
 <body ng-app="app" ng-controller="AppCtrl">
-<div class="container-fluid">
+<div class="container">
 
-
-
-    <div class="navbar-wrapper">
-        <div class="container">
-
-            <!--Navigation Bar-->
-            <nav class="navbar navbar-inverse navbar-static-top">
-                <div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                                data-target="#bs-example-navbar-collapse-1">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <!--<p class="navbar-brand">Roses Automotive</p>-->
-                        <!--<img src="assets/img/logo/Rose%20automotive%20logo/300%20px%20Logo.png" class="img-responsive navbar-brand">-->
-                    </div>
-
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                            <!--Navbar links-->
-                            <li><a ui-sref="home">Home</a></li>
-                            <li><a ui-sref="location">Location</a></li>
-                            <!--TODO: used car page-->
-                            <li><a ui-sref="used-cars">Used Cars</a></li>
-                            <!--TODO: solar page-->
-                            <li><a ui-sref="home">Environmental</a></li>
-
-                            <li><a ui-sref="about">About</a></li>
-
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-
+    <div class="row">
+        <div class="col-lg-4">
+            <img src="assets/img/logo/Rose automotive logo/300 px Logo.png" class="img-responsive">
+        </div>
+        <div class="col-lg-8">
+            <div class="row">
+                <h1 class="text-right">26 North Main Street, Sherborn MA</h1>
+            </div>
+            <h2 class="text-right"><a
+                    href="https://www.facebook.com/pages/Roses-Automotive/217186141633919?fref=ts"><img
+                    src="assets/img/facebook_icon_325x325.png" class="img-responsive pull-right"></a>508-650-1628 &nbsp;&nbsp;
+            </h2>
         </div>
     </div>
 
-    <!--&lt;!&ndash;Logo and Location info&ndash;&gt;-->
-    <!--<div class="row">-->
-        <!--<div class="col-lg-3">-->
-            <!--<img class="img-responsive" src="assets/img/logo/Rose automotive logo/300 px Logo.png">-->
-        <!--</div>-->
-        <!--<div class="col-lg-9">-->
-            <!--&lt;!&ndash;<h2 class="text-">26 North Main Street, Sherborn, MA 01770</h2>&ndash;&gt;-->
 
-            <!--&lt;!&ndash;Navigation Bar&ndash;&gt;-->
-            <!--<nav class="navbar navbar-default navbar-static-top">-->
-                <!--<div class="container">-->
-                    <!--&lt;!&ndash; Brand and toggle get grouped for better mobile display &ndash;&gt;-->
-                    <!--<div class="navbar-header">-->
-                        <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"-->
-                                <!--data-target="#bs-example-navbar-collapse-1">-->
-                            <!--<span class="sr-only">Toggle navigation</span>-->
-                            <!--<span class="icon-bar"></span>-->
-                            <!--<span class="icon-bar"></span>-->
-                            <!--<span class="icon-bar"></span>-->
-                        <!--</button>-->
-                        <!--&lt;!&ndash;<p class="navbar-brand">Roses Automotive</p>&ndash;&gt;-->
-                    <!--</div>-->
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
 
-                    <!--&lt;!&ndash; Collect the nav links, forms, and other content for toggling &ndash;&gt;-->
-                    <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
-                        <!--<ul class="nav navbar-nav">-->
-                            <!--&lt;!&ndash;Navbar links&ndash;&gt;-->
-                            <!--<li><a ui-sref="home">Home</a></li>-->
-                            <!--<li><a ui-sref="location">Location</a></li>-->
-                            <!--&lt;!&ndash;TODO: used car page&ndash;&gt;-->
-                            <!--<li><a ui-sref="home">Used Cars</a></li>-->
-                            <!--&lt;!&ndash;TODO: solar page&ndash;&gt;-->
-                            <!--<li><a ui-sref="home">Solar</a></li>-->
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <!--Navbar links-->
+                    <li><a ui-sref="home">Home</a></li>
+                    <li><a ui-sref="location">Location</a></li>
+                    <!--TODO: used car page-->
+                    <li><a ui-sref="used-cars">Used Cars</a></li>
+                    <!--TODO: solar page-->
+                    <li><a ui-sref="home">Environmental</a></li>
 
-                            <!--<li><a ui-sref="about">About</a></li>-->
+                    <li><a ui-sref="about">About</a></li>
+                    <!--<li><a href="https://www.facebook.com/pages/Roses-Automotive/217186141633919?fref=ts"><img src="assets/img/facebook_icon_325x325.png" class="img-responsive" ></a></li>-->
 
-                        <!--</ul>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</nav>-->
-
-
-        <!--</div>-->
-    <!--</div>-->
-
-
+                </ul>
+            </div>
+        </div>
+    </nav>
 
 
     <!--Angular view insertion-->
     <!--This is where the pages get injected dynamically to-->
     <div ui-view></div>
-
 
     <!--Phone number footer-->
     <footer>
