@@ -8,6 +8,14 @@ body {
     color: #5a5a5a;
 }
 
+/*carousel padding*/
+.carousel-inner {
+    margin-bottom: 20px;
+}
+
+.logo-bar {
+    padding-botton: 20px;
+}
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
